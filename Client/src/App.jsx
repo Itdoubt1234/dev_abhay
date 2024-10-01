@@ -8,7 +8,7 @@ function App() {
     <div className='w-full bg-[#FAF9F6] min-h-screen flex flex-col items-center'>
       <ScrollRestoration />
       <Header />
-      <Outlet />
+      <div className="flex-1 w-full"><Outlet /></div>
       <Footer />
     </div>
   )
