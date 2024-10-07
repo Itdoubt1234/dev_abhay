@@ -5,7 +5,7 @@ import { Outlet, ScrollRestoration } from 'react-router-dom'
 
 function App() {
   return (
-    <div className='w-full bg-[#FAF9F6] min-h-screen flex flex-col items-center'>
+    <div className='w-full bg-[#F0F3FA] min-h-screen flex flex-col items-center p-light'>
       <ScrollRestoration />
       <Header />
       <div className="flex-1 w-full"><Outlet /></div>
