@@ -6,6 +6,8 @@ import About from "./Content/Pages/About/About";
 import Services from "./Content/Pages/Services/Services";
 import Internships from "./Content/Pages/Internships/Internships";
 import Contact from "./Content/Pages/Contact/Contact";
+import LandingBG from "./Content/Pages/Home/Components/LandingBG";
+import Blogs from "./Content/Pages/Blogs/Blogs";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
@@ -15,6 +17,8 @@ export const router = createBrowserRouter(
             <Route path="services" element={<Services />} />
             <Route path="internships" element={<Internships />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="blogs" element={<Blogs />} />
+
 
             <Route path="*" loader={() => { throw { status: 404, message: 'Page Not Found' } }} />
         </Route>
