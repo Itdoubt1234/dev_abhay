@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaLinkedin, FaSquareWhatsapp } from "react-icons/fa6";
+import { Link, redirect } from 'react-router-dom';
+import { FaLinkedin, FaSquareWhatsapp, FaSquareInstagram, FaSquareFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   const links = [
@@ -14,7 +14,9 @@ const Footer = () => {
   const services = ['Online Store', 'Web Scrapping', 'Dropshipping', 'UI/UX', 'Python', 'Social Media'];
   const socialLinks = [
     { icon: <FaLinkedin />, redirect: 'https://www.linkedin.com/company/itdoubt/posts/?feedView=all' },
-    { icon: <FaSquareWhatsapp />, redirect: 'https://www.whatsapp.com/' },
+    { icon: <FaSquareWhatsapp />, redirect: 'https://whatsapp.com/channel/0029VakVpSdBA1f4ED9khx1Z' },
+    { icon: <FaSquareInstagram />, redirect: 'https://www.instagram.com/it__doubt/' },
+    { icon: <FaSquareFacebook />, redirect: '' },
   ];
 
   return (
