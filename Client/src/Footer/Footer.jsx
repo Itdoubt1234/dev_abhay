@@ -20,8 +20,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full text-white">
-      <div className="w-full bg-[#000D44] flex justify-around py-16">
+    <footer className="w-full text-white bg-[#000D44]">
+
+      <div className="w-full flex justify-around py-16">
 
 
         {/* MAIN LINKS */}
@@ -96,6 +97,9 @@ const Footer = () => {
         </div>
 
       </div>
+
+      <p className='text-center p-medium py-8 border-t border-gray-400/20'>Copyright© 2024. All Rights Reserved.</p>
+
     </footer>
   );
 };

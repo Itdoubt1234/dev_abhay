@@ -3,6 +3,11 @@ import CTAbutton from './Components/CTAbutton';
 import Form from '../Contact/Components/Form';
 import { LuMoveRight } from "react-icons/lu";
 import LandingBG from './Components/LandingBG';
+import Comp2 from './Components/Comp2';
+import Comp3 from './Components/Comp3';
+import Comp4 from './Components/Comp4';
+import Comp5 from './Components/Comp5';
+import Comp6 from './Components/Comp6';
 
 // for cards in WHY CHOOSE US
 
@@ -116,6 +121,59 @@ function Home() {
 
       </div>
 
+      {/* TRANSFORMING BUSINESSES */}
+
+      <Comp2 />
+
+      {/* Featured Projects */}
+
+      <Comp3 />
+
+      {/* Student Gradient */}
+
+      <Comp4 />
+
+
+      {/* OUR EXPERTISE */}
+
+      <div className='w-full h-screen bg-gradient-to-r from-[#291756] to-[#051629] px-8 py-10'>
+
+        <h1 className='text-white p-bold text-3xl text-center'>Our Expertise</h1>
+
+        <div className="grid grid-cols-4 grid-rows-2 gap-4 mt-8">
+          {
+            tech.map((card, index) => (
+              <div
+                key={index}
+                className={` ${index === 1 || index === 3 ? `col-span-2` : ''
+                  } bg-white rounded-2xl overflow-hidden h-[250px]`}
+              >
+
+                <div className='h-[80%]'>
+                  <img className='h-full w-full object-cover' src={card.img} alt={card.title} />
+                </div>
+
+                <div className="flex h-[20%] items-center justify-between px-4 text-lg p-medium">
+                  <h2 className='capitalize '>{card.title}</h2>
+                  <LuMoveRight className='text-3xl' />
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+      </div>
+
+
+      {/* TECHNOLOGY */}
+
+      <Comp5 />
+
+
+      {/* Additional KB element */}
+
+      <Comp6 />
+      
 
       {/* WHY CHOOSE US */}
 
@@ -147,59 +205,6 @@ function Home() {
             <img className='absolute z-[2] bottom-0 w-[80%]' src="/Home/image-4.png" alt="" />
           </div>
 
-        </div>
-
-      </div>
-
-
-      {/* Additional KB element */}
-
-      <div className='w-full bg-white p-8 text-white'>
-
-        <div className="relative">
-
-          <img className='' src="/Home/image-6.png" alt="" />
-          <img className='absolute top-0' src="/Home/image-7.png" alt="" />
-
-          <div className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col gap-2 items-center justify-center text-center w-full'>
-            <span className='text-4xl p-light'>Our resilient mobile and web app development </span>
-            <span className='text-4xl p-bold'>Solutions elevate your business to the pinnacle!</span>
-            <p className='w-1/2 mt-2'>Allow our team to offer you a complimentary technical proposal for your upcoming enterprise custom project, with no obligations.</p>
-
-            <CTAbutton />
-          </div>
-
-        </div>
-
-      </div>
-
-
-      {/* OUR EXPERTISE */}
-
-      <div className='w-full h-screen bg-gradient-to-r from-[#291756] to-[#051629] px-8 py-10'>
-
-        <h1 className='text-white p-bold text-3xl text-center'>Our Expertise</h1>
-
-        <div className="grid grid-cols-4 grid-rows-2 gap-4 mt-8">
-          {
-            tech.map((card, index) => (
-              <div
-                key={index}
-                className={` ${index === 1 || index === 3 ? `col-span-2` : ''
-                  } bg-white rounded-2xl overflow-hidden h-[250px]`}
-              >
-
-                <div className='h-[80%]'>
-                  <img className='h-full w-full object-cover' src={card.img} alt={card.title} />
-                </div>
-
-                <div className="flex h-[20%] items-center justify-between px-4 text-lg p-medium">
-                  <h2 className='capitalize '>{card.title}</h2>
-                  <LuMoveRight className='text-3xl' />
-                </div>
-              </div>
-            ))
-          }
         </div>
 
       </div>
